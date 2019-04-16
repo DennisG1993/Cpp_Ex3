@@ -5,6 +5,9 @@
 
 using namespace ariel;
 
+cout << setiosflags(fixed) << setiosflags(showpoint);
+cout << setprecision(2);
+
 PhysicalNumber::PhysicalNumber(double value, Unit unit){
    this->value = value;
    this->unit = unit;
