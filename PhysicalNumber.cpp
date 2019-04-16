@@ -4,8 +4,6 @@
 #include <string>
 
 
-std::cout << std::setiosflags(fixed) << std::setiosflags(showpoint);
-std::cout << std::setprecision(2);
 using namespace ariel;
 
 PhysicalNumber::PhysicalNumber(double value, Unit unit){
