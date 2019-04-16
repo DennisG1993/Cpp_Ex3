@@ -147,7 +147,7 @@ if(!PhysicalNumber::same_unit(a,b)){
    throw std::string("Cant compare different units");
 }
 double val = (a - b).value;
-return ( val < 0 ) ? true : false;
+return ( val > 0 ) ? true : false;
 }
 
 bool ariel::operator<(const PhysicalNumber& a, const PhysicalNumber& b) {
