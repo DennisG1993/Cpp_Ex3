@@ -135,11 +135,8 @@ bool ariel::operator==(const PhysicalNumber& a, const PhysicalNumber& b) {
 if(!PhysicalNumber::same_unit(a,b)){
 throw std::string("Cant compare different units");
 }
-else if(PhysicalNumber::same_sub_unit(a,b)){
-   double val = (a - b).value;
-   return ( val == 0 ) ? true : false;
-}
-else return (a-b).value == 0;
+int ans = (a-b).value;
+return ans == 0;
 }
 
 bool ariel::operator!=(const PhysicalNumber& a, const PhysicalNumber& b) {
@@ -249,7 +246,6 @@ std::istream& ariel::operator>>(std::istream& is, PhysicalNumber& a) {
 
    return is;
 }
-
 
 bool PhysicalNumber::same_unit(const PhysicalNumber& a, const PhysicalNumber& b) {
    return ( (is_len(a) && is_len(b) )|| (is_mass(a) && is_mass(b) )|| (is_time(a) && is_time(b) ) ) ?

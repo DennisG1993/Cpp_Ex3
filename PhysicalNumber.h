@@ -48,7 +48,7 @@ namespace ariel {
    	/*
       Helping functions to determine if we work with same units
       */
-   	static bool same_unit(const PhysicalNumber&, const PhysicalNumber&);
+   	static bool same_unit(const PhysicalNumber&,const PhysicalNumber&);
       static bool same_sub_unit(const PhysicalNumber&, const PhysicalNumber&);
    	static bool is_len(const PhysicalNumber&);
       static bool is_mass(const PhysicalNumber&);
