@@ -5,8 +5,8 @@
 
 using namespace ariel;
 
-std::cout << setiosflags(fixed) << setiosflags(showpoint);
-std::cout << setprecision(2);
+std::cout << std::setiosflags(fixed) << std::setiosflags(showpoint);
+std::cout << std::setprecision(2);
 
 PhysicalNumber::PhysicalNumber(double value, Unit unit){
    this->value = value;
